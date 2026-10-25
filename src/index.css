@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Dark Theme (Default Architectural Palette) */
+:root, html.dark {
+  --bg: #111113;
+  --ink: #f8f7f4;
+  --ink-heading: #ffffff;
+  --ink-muted: rgba(248, 247, 244, 0.45);
+  --ink-faint: rgba(248, 247, 244, 0.1);
+  --surface-card: rgba(255, 255, 255, 0.02);
+  --surface-card-hover: rgba(255, 255, 255, 0.04);
+  --surface-modal: #141417;
+  --border-color: rgba(248, 247, 244, 0.1);
+  --border-subtle: rgba(248, 247, 244, 0.06);
+  --header-bg: rgba(17, 17, 19, 0.92);
+  --dot-color: rgba(248, 247, 244, 0.08);
+
+  --accent: #e2ff62;
+  --accent-contrast: #111113;
+  --accent-text: #e2ff62;
+  --accent-border: #e2ff62;
+  --accent-glow: rgba(226, 255, 98, 0.5);
+  --tech-bullet: #e2ff62;
+  --badge-bg: #e2ff62;
+  --badge-text: #111113;
+  --status-active: #e2ff62;
+
+  --selection-bg: #e2ff62;
+  --selection-text: #111113;
+  --scrollbar-track: #111113;
+  --scrollbar-thumb: rgba(248, 247, 244, 0.2);
+}
+
+/* High-Contrast Light Theme (Architectural Noir Paper) */
+html.light {
+  --bg: #fafaf8;
+  --ink: #09090b;
+  --ink-heading: #000000;
+  --ink-muted: rgba(9, 9, 11, 0.65);
+  --ink-faint: rgba(9, 9, 11, 0.15);
+  --surface-card: #ffffff;
+  --surface-card-hover: #f4f4f0;
+  --surface-modal: #ffffff;
+  --border-color: rgba(9, 9, 11, 0.18);
+  --border-subtle: rgba(9, 9, 11, 0.1);
+  --header-bg: rgba(250, 250, 248, 0.96);
+  --dot-color: rgba(9, 9, 11, 0.12);
+
+  --accent: #09090b;
+  --accent-contrast: #ffffff;
+  --accent-text: #09090b;
+  --accent-border: #09090b;
+  --accent-glow: rgba(9, 9, 11, 0.25);
+  --tech-bullet: #16a34a;
+  --badge-bg: #09090b;
+  --badge-text: #ffffff;
+  --status-active: #16a34a;
+
+  --selection-bg: #09090b;
+  --selection-text: #ffffff;
+  --scrollbar-track: #fafaf8;
+  --scrollbar-thumb: rgba(9, 9, 11, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--ink);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* Background Dot Grid */
+.dots-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+  background-size: 32px 32px;
+  z-index: 0;
+  pointer-events: none;
+  transition: background-image 0.25s ease;
+}
+
+/* Vertical text navigation for desktop */
+.vertical-nav {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
