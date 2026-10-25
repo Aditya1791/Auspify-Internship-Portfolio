@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   email: 'swainaditya85@gmail.com',
   phone: '+91 78468 87605',
   location: 'Burla, Sambalpur, Odisha, India (Open to Remote Worldwide)',
-  bio: 'Computer Science & Engineering graduate from Trident Academy of Technology, currently pursuing M.Tech in Computer Science & Engineering at Veer Surendra Sai University of Technology (VSSUT), Burla, Sambalpur — one of the most esteemed and premier universities of Odisha. Practical experience building and shipping production-grade full-stack web applications using the MERN stack (React, Node.js, Express, MongoDB) and Python/Flask. Independently designed and deployed three complete software solutions: an AI-integrated proctoring system with OpenCV/DeepFace, a real-time collaborative workspace with Socket.io, and a role-based examination portal.',
+  bio: 'Computer Science & Engineering graduate from Trident Academy of Technology, currently pursuing M.Tech in Computer Science & Engineering at Veer Surendra Sai University of Technology (VSSUT), Burla, Sambalpur — one of the most esteemed and premier universities of Odisha. Practical experience building and shipping production-grade full-stack web applications using the MERN stack (React, Node.js, Express, MongoDB) and Python/Flask. Independently designed and deployed three complete software solutions: AI Proctor (an AI-integrated proctoring system with OpenCV/DeepFace), Collab-SYNC (a real-time collaborative workspace with Socket.io), and Remote Examination Portal (a role-based assessment portal).',
   status: 'Pursuing M.Tech in CSE at VSSUT • Open to Full-Stack & Frontend Roles',
   social: {
     github: 'https://www.github.com/Aditya1791',
@@ -30,15 +30,15 @@ export const PERSONAL_INFO = {
 export const PROJECTS: Project[] = [
   {
     id: 'ai-proctoring-system',
-    title: 'Smart AI-Based Proctoring System',
+    title: 'AI Proctor',
     tagline: 'Biometric facial verification, live gaze tracking, and automated multi-format examination engine',
     description: 'A full-stack AI-powered online examination platform with secure role-based access for Professors and Students, biometric facial authentication via DeepFace, live proctoring engine with OpenCV & Dlib, and online code compilation for 15+ programming languages.',
     fullDescription: 'Designed and built an end-to-end AI-powered examination ecosystem. Integrated DeepFace for real-time biometric facial authentication to verify student identities against registered profiles before test admittance, eliminating impersonation. Implemented an active video proctoring engine using OpenCV and Dlib 68-point facial landmark models to continuously track gaze angles, identify multiple people in frame, and automatically log timestamped suspicious anomalies throughout each exam. Engineered three comprehensive exam modes: automated MCQs with CSV bulk upload and negative marking, subjective written answers, and practical coding tests powered by an online compiler supporting 15+ languages including C, C++, Java, Python, and Node.js. Integrated Stripe for secure examination fee payments and containerized the architecture with Docker and Docker Compose.',
     category: 'AI & ML',
     tags: ['Python', 'Flask', 'MySQL', 'DeepFace', 'OpenCV', 'Dlib', 'Bootstrap 5', 'Stripe API', 'Docker'],
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-    liveUrl: 'https://github.com/Aditya1791',
-    githubUrl: 'https://github.com/Aditya1791',
+    liveUrl: 'https://aditya1791.github.io/AI-Proctor-Demo/',
+    githubUrl: 'https://github.com/Aditya1791/AI-Proctor',
     featured: true,
     metrics: [
       { label: 'Compilers', value: '15+ Langs' },
@@ -63,15 +63,15 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'collaborative-workspace',
-    title: 'Collaborative Project Management Workspace',
+    title: 'Collab-SYNC',
     tagline: 'Real-time multi-user kanban system with Socket.io broadcast and optimistic UI state',
     description: 'A multi-user real-time project management platform — inspired by Trello — featuring drag-and-drop kanban boards, multiple workspace dashboards, and live state synchronisation so every connected user always sees the same up-to-date board without refreshing.',
     fullDescription: 'Engineered a full-stack real-time collaboration application designed for seamless team task management. Developed interactive drag-and-drop kanban boards using @hello-pangea/dnd on the frontend, with Socket.io broadcasting every task position update server-side the moment it happens — when User A moves a card, it shifts on User B screen instantly. Implemented optimistic UI updates so the board responds immediately to user actions before database persistence confirms, gracefully rolling back to the previous state if an API request fails to guarantee data integrity.',
     category: 'Full Stack',
     tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Redux Toolkit', 'JWT', '@hello-pangea/dnd'],
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
-    liveUrl: 'https://github.com/Aditya1791',
-    githubUrl: 'https://github.com/Aditya1791',
+    liveUrl: 'https://github.com/Aditya1791/Collab-SYNC-Demo',
+    githubUrl: 'https://github.com/Aditya1791/Collab-SYNC',
     featured: true,
     metrics: [
       { label: 'Sync Latency', value: '<50ms' },
@@ -93,15 +93,14 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'remote-exam-portal',
-    title: 'Advanced Remote Examination & Assessment Portal',
+    title: 'Remote Examination Portal',
     tagline: 'Three-tier role-based examination engine with rich text questions and focus anomaly logging',
     description: 'A full-stack online examination system with three separate role-based portals — Admin, Teacher, and Student — each with its own purpose-built React dashboard and strictly scoped API access enforced at the Express middleware level.',
     fullDescription: 'Architected a comprehensive online examination ecosystem tailored for educational institutions. Designed three dedicated role-based React dashboards with granular access control: Admin portal for institute oversight, Teacher portal for question formulation and result publication, and Student portal for scheduled test taking. Implemented a rich exam creation interface using a React-based rich text editor supporting dynamic question banks, configurable options, automated grading logic, and per-exam countdown limits. Built client-side integrity monitoring that timestamps browser blur events, tab switches, and focus departures into MongoDB logs for teacher evaluation.',
     category: 'Full Stack',
     tags: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Chart.js', 'JWT'],
     image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80',
-    liveUrl: 'https://github.com/Aditya1791',
-    githubUrl: 'https://github.com/Aditya1791',
+    githubUrl: 'https://github.com/Aditya1791/Remote-Examination-Portal',
     featured: true,
     metrics: [
       { label: 'Portals', value: '3 Dedicated' },
@@ -256,7 +255,7 @@ export const TESTIMONIALS = [
   {
     name: 'Engineering Evaluation',
     role: 'Academic Review Committee',
-    content: 'His independent development of the Smart AI Proctoring System showcasing DeepFace biometric matching, OpenCV gaze tracking, and a 15-language compiler exhibits a level of depth and initiative that stands out among engineering peers.',
+    content: 'His independent development of the AI Proctor system showcasing DeepFace biometric matching, OpenCV gaze tracking, and a 15-language compiler exhibits a level of depth and initiative that stands out among engineering peers.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
   },
   {

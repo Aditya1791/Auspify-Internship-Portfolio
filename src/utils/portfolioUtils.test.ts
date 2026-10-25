@@ -55,9 +55,9 @@ test('filterProjects - filters by category and search query correctly', () => {
   assert.ok(fullStackProjects.length > 0);
   assert.ok(fullStackProjects.every((p) => p.category === 'Full Stack'));
 
-  const searchResults = filterProjects(PROJECTS, 'All', 'Kubernetes');
+  const searchResults = filterProjects(PROJECTS, 'All', 'OpenCV');
   assert.equal(searchResults.length, 1);
-  assert.equal(searchResults[0].id, 'nexus-cloud');
+  assert.equal(searchResults[0].id, 'ai-proctoring-system');
 
   const emptyResults = filterProjects(PROJECTS, 'All', 'nonexistentquery123');
   assert.equal(emptyResults.length, 0);
@@ -76,7 +76,7 @@ test('filterSkills - filters by category and search term correctly', () => {
 test('calculatePortfolioStats - computes correct counts', () => {
   const stats = calculatePortfolioStats(PROJECTS);
   assert.equal(stats.totalProjects, PROJECTS.length);
-  assert.ok(stats.totalCategories >= 3);
+  assert.ok(stats.totalCategories >= 2);
   assert.ok(stats.featuredCount >= 1);
   assert.ok(stats.uniqueTagsCount > 10);
 });

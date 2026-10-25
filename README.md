@@ -137,9 +137,9 @@ Here are the three production-grade full-stack and AI systems independently arch
   <tr>
     <td width="50%" valign="top">
       <div align="center">
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" width="100%" alt="Smart AI Proctoring System" style="border-radius: 6px;" />
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" width="100%" alt="AI Proctor" style="border-radius: 6px;" />
       </div>
-      <h3>👁️ Smart AI-Based Proctoring System</h3>
+      <h3>👁️ AI Proctor — Smart AI-Based Proctoring System</h3>
       <p><em>Full-stack online examination platform featuring DeepFace facial verification, live OpenCV/Dlib gaze tracking, and 15+ online compilers.</em></p>
       <p>
         <img src="https://img.shields.io/badge/Python-Flask-3776AB?style=flat-square&logo=flask" />
@@ -154,14 +154,15 @@ Here are the three production-grade full-stack and AI systems independently arch
         <li><strong>3 Exam Formats:</strong> MCQ with CSV upload and negative marking, subjective written tests, and practical coding with built-in compilers for 15+ languages (C, C++, Java, Python, Node.js).</li>
       </ul>
       <p>
-        <a href="https://github.com/Aditya1791"><strong>💻 GitHub Repository</strong></a>
+        <a href="https://aditya1791.github.io/AI-Proctor-Demo/"><strong>🌐 Live Demo</strong></a> &bull;
+        <a href="https://github.com/Aditya1791/AI-Proctor"><strong>💻 GitHub Repository</strong></a>
       </p>
     </td>
     <td width="50%" valign="top">
       <div align="center">
-        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" width="100%" alt="Collaborative Workspace" style="border-radius: 6px;" />
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" width="100%" alt="Collab-SYNC" style="border-radius: 6px;" />
       </div>
-      <h3>📋 Collaborative Project Management Workspace</h3>
+      <h3>📋 Collab-SYNC — Collaborative Project Management Workspace</h3>
       <p><em>Multi-user real-time kanban workspace — modeled after Trello — with drag-and-drop sync and optimistic UI rollbacks.</em></p>
       <p>
         <img src="https://img.shields.io/badge/React.js-Frontend-61DAFB?style=flat-square&logo=react" />
@@ -176,7 +177,8 @@ Here are the three production-grade full-stack and AI systems independently arch
         <li><strong>Multi-Workspace:</strong> Complete dashboard organization with custom lists, labels, assignees, and JWT authentication.</li>
       </ul>
       <p>
-        <a href="https://github.com/Aditya1791"><strong>💻 GitHub Repository</strong></a>
+        <a href="https://github.com/Aditya1791/Collab-SYNC-Demo"><strong>🌐 Live Demo</strong></a> &bull;
+        <a href="https://github.com/Aditya1791/Collab-SYNC"><strong>💻 GitHub Repository</strong></a>
       </p>
     </td>
   </tr>
@@ -185,7 +187,7 @@ Here are the three production-grade full-stack and AI systems independently arch
       <div align="center">
         <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80" width="100%" style="max-height: 280px; object-fit: cover; border-radius: 6px;" alt="Remote Examination Portal" />
       </div>
-      <h3>📝 Advanced Remote Examination &amp; Assessment Portal</h3>
+      <h3>📝 Remote Examination Portal</h3>
       <p><em>Three-tier role-based examination engine with dedicated Admin, Teacher, and Student portals, rich text question editors, and browser focus departure logging.</em></p>
       <p>
         <img src="https://img.shields.io/badge/React.js-Portals-61DAFB?style=flat-square&logo=react" />
@@ -201,7 +203,7 @@ Here are the three production-grade full-stack and AI systems independently arch
         <li><strong>Visual Score Insights:</strong> Interactive Chart.js analytics breaking down student grade distributions and question difficulties.</li>
       </ul>
       <p>
-        <a href="https://github.com/Aditya1791"><strong>💻 GitHub Repository</strong></a>
+        <a href="https://github.com/Aditya1791/Remote-Examination-Portal"><strong>💻 GitHub Repository</strong></a>
       </p>
     </td>
   </tr>
@@ -261,8 +263,8 @@ Here are the three production-grade full-stack and AI systems independently arch
 
 ## 🏆 Key Achievements & Hackathons
 
-- 🚀 **Three Shipped Production Applications:** Independently designed and deployed three production-grade full-stack web applications covering real-time collaboration, AI proctoring, and role-based examination management while completing undergraduate studies.
-- 🎯 **Advanced Real-World AI Engineering:** Engineered an end-to-end proctoring platform combining DeepFace biometric matching, OpenCV gaze tracking, a 15-language code compiler, and Stripe billing.
+- 🚀 **Three Shipped Production Applications:** Independently designed and deployed three production-grade full-stack web applications: **AI Proctor** (AI proctoring with DeepFace & OpenCV), **Collab-SYNC** (real-time collaborative workspace with Socket.io), and **Remote Examination Portal** (three-tier role-based examination portal) while completing undergraduate studies.
+- 🎯 **Advanced Real-World AI Engineering:** Engineered an end-to-end proctoring platform (**AI Proctor**) combining DeepFace biometric matching, OpenCV gaze tracking, a 15-language code compiler, and Stripe billing.
 - ⚡ **IEEE Sustainable Solutions Hackathon (2024):** Participated in the hackathon (28–29 Sep 2024), collaborating under time-constrained conditions to rapidly engineer an innovative solution.
 - 📜 **Full-Stack MERN Certification:** Completed self-directed full-stack curriculum with open-source repositories on GitHub.
 
@@ -284,7 +286,7 @@ aditya-swain-portfolio/
 │   │   ├── Hero.tsx                  # Serif masthead, VSSUT status & quick CTAs
 │   │   ├── Navbar.tsx                # Theme switcher, view mode toggle & menu
 │   │   ├── ProjectDetailModal.tsx    # Technical architectural project deep-dive
-│   │   ├── ProjectsSection.tsx       # AI Proctoring, Kanban & Exam Portal showcase
+│   │   ├── ProjectsSection.tsx       # AI Proctor, Collab-SYNC & Remote Exam Portal showcase
 │   │   ├── ResumeModal.tsx           # CV viewer with direct PDF download trigger
 │   │   ├── SkillsSection.tsx         # MERN, Python & Computer Vision matrix
 │   │   └── TestimonialsSection.tsx   # Peer endorsements & academic mentorship

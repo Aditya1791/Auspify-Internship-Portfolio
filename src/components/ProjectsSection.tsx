@@ -207,6 +207,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Open demo for ${project.title}`}
+                        title={`Open live demo for ${project.title}`}
                         className="hover:text-[var(--accent-text)] transition"
                       >
                         <ExternalLink className="w-4 h-4" />
@@ -218,6 +219,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Open source for ${project.title}`}
+                        title={`Open GitHub repository for ${project.title}`}
                         className="hover:text-[var(--accent-text)] transition"
                       >
                         <Github className="w-4 h-4" />
